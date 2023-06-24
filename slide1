@@ -1,0 +1,19 @@
+import "fmt"
+
+
+func main() {
+  palavra1 := ""
+  palavra2 := ""
+
+
+  fmt.Println("Digite a primeira palavra: ")
+  fmt.Scan(&palavra1)
+
+
+  fmt.Println("Digite a segunda palavra:")
+  fmt.Scan(&palavra2)
+
+
+  frase := palavra1 + "," + palavra2
+  fmt.Println(frase)
+}
