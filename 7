@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+	"regexp"
+)
+
+func main() {
+	var text string
+	fmt.Print("Digite uma string: ")
+	fmt.Scanln(&text)
+
+	match, _ := regexp.MatchString(`\d`, text)
+
+	if match {
+
+		fmt.Println("A string contém pelo menos um número.")
+	} else {
+
+		fmt.Println("A string não contém números.")
+	}
+}
