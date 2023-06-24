@@ -1,0 +1,18 @@
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	var texto, caractereold, caracterenew string
+	fmt.Print("Digite uma string: ")
+	fmt.Scanln(&texto)
+	fmt.Print("Digite o caractere a ser substituído: ")
+	fmt.Scanln(&caractereold)
+	fmt.Print("Digite o novo caractere: ")
+	fmt.Scanln(&caracterenew)
+
+	textoSubstituido := strings.ReplaceAll(texto, caractereold, caracterenew)
+
+	fmt.Println("Texto substituído:", textoSubstituido)
+}
