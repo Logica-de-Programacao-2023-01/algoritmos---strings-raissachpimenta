@@ -1,0 +1,22 @@
+package main
+
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	var string string
+	fmt.Print("Digite uma string: ")
+	fmt.Scanln(&string)
+
+	string = strings.ToLower(str)
+
+	str = strings.ReplaceAll(string, "a", "")
+	str = strings.ReplaceAll(string, "e", "")
+	str = strings.ReplaceAll(string, "i", "")
+	str = strings.ReplaceAll(string, "o", "")
+	str = strings.ReplaceAll(string, "u", "")
+
+	fmt.Println("Resultado:", string)
+}
