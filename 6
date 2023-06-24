@@ -1,0 +1,15 @@
+import (
+	"fmt"
+	"strings"
+)
+
+func main() {
+	var text string
+	fmt.Print("Digite uma string: ")
+	fmt.Scanln(&text)
+
+	words := strings.Fields(text)
+	numWords := len(words)
+
+	fmt.Println("Número de palavras:", numWords)
+}
