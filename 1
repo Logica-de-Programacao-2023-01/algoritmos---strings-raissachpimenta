@@ -1,13 +1,13 @@
 package main
 
 import (
-	"fmt"
-	"strings"
+  "fmt"
+  "strings"
 )
 
 func main() {
-	p1 := ""
-	fmt.Print("digite uma palavra: ")
-	fmt.Scan(&p1)
-	fmt.Printf("A palavra %s fica dessa forma toda maiuscula %s", p1, strings.ToUpper(p1))
+  s := ""
+  fmt.Println("Digite um string:")
+  fmt.Scan(&s)
+  fmt.Println(strings.ToUpper(s))
 }
